@@ -22,35 +22,3 @@ def prepare_data(filepath='data/creditcard.csv'):
     # Return the datasets so other files can grab them
     return xTrain, xTest, yTrain, yTest
 
-
-# --- Exploratory Data Analysis ---
-if __name__ == '__main__':
-    # Everything inside this block ONLY runs if you execute this specific file in the terminal.
-    # It will NOT run when you import prepare_data into your train_model.py file.
-    
-    data = pd.read_csv('data/creditcard.csv')
-    
-    print(data.head())
-    print(data.describe())
-    
-    # Analyzing the data for the number of fraud cases vs valid cases
-    fraud = data[data['Class'] == 1]
-    valid = data[data['Class'] == 0]
-    outlierFraction = len(fraud)/float(len(valid))
-    
-    print(outlierFraction)
-    print('Fraud Cases: {}'.format(len(fraud)))
-    print('Valid Transactions: {}'.format(len(valid)))
-    
-    # Exploring the transaction amount
-    print("Amount details of the fraudulent transaction")
-    print(fraud.Amount.describe())
-    print("Details of valid transaction")
-    print(valid.Amount.describe())
-    
-    X = data.drop(['Class'], axis=1)
-    Y = data["Class"]
-    print(X.shape)
-    print(Y.shape)
-    
-    print("\n Data preprocessing script ran successfully!")
