@@ -1,5 +1,3 @@
-# credit-card-fraud-detection
-A mini-project to practice supervised learning and classification techniques.
 # Credit Card Fraud Detection
 
 A machine learning mini-project focused on identifying fraudulent credit card transactions using supervised learning techniques. 
