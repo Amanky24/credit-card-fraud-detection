@@ -18,6 +18,16 @@ This project uses the [Credit Card Fraud Detection dataset from Kaggle](https://
 3. Move the `creditcard.csv` file into the `data/` directory of this project.
 
 ---
+## 🛠️ Technologies Used
+
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
+
+* **Data Visualization:** Matplotlib, Seaborn
+* **Model Serialization:** Joblib
+* **Environment:** VS Code, Git
 
 ## 🗂️ Project Structure
 
@@ -36,3 +46,4 @@ credit-card-fraud-detection/
 ├── .gitignore             # Specifies intentionally untracked files
 ├── README.md              # Project documentation
 └── requirements.txt       # Python dependencies
+
